@@ -1,6 +1,6 @@
 runtime_resource_overlay {
-    name: "X01BDWifiOverlay",
-    theme: "X01BDWifiOverlay",
+    name: "WifiX00TD",
+    theme: "WifiX00TD",
     sdk_version: "current",
     product_specific: true
 }
