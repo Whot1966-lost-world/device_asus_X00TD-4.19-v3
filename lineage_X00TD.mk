@@ -9,22 +9,14 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_o_mr1.mk)
 
-# Inherit some common PixelExperience stuff
-$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
-
-# PixelExperience Properties
-TARGET_BOOT_ANIMATION_RES := 1080
-TARGET_GAPPS_ARCH := arm64
-TARGET_INCLUDE_LIVE_WALLPAPERS := false
-TARGET_INCLUDE_STOCK_ARCORE := false
-TARGET_SUPPORTS_QUICK_TAP := true
-TARGET_USES_AOSP_RECOVERY := true
+# Inherit some common LineageOS stuff
+$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 # Inherit from X00TD device
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := aosp_X00TD
+PRODUCT_NAME := lineage_X00TD
 PRODUCT_DEVICE := X00TD
 PRODUCT_BRAND := asus
 PRODUCT_MODEL := ASUS_X00TD
